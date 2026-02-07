@@ -251,7 +251,7 @@
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
+        <h4>More Works from Our Center</h4>
         <button class="close-btn" onclick="toggleMoreWorks()">
           <i class="fas fa-times"></i>
         </button>
@@ -263,7 +263,7 @@
             <!-- TODO: Replace with actual paper title -->
             <h5>Expert Composer Policy: Scalable Skill Repertoire for Quadruped Robots</h5>
             <!-- TODO: Replace with brief description -->
-            <p>We propose the expert composer policy, a framework to reliably expand the skill repertoire of quadruped agents. The composer policy links pair of experts via transitions to a sampled target state, allowing experts to be composed sequentially. Each expert specializes in a single skill, such as a locomotion gait or a jumping motion. Instead of a hierarchical or mixture-of-experts architecture, we train a single composer policy in an independent process that is not conditioned on the other expert policies. By reusing the same composer policy, our approach enables adding new experts without affecting existing ones, enabling incremental repertoire expansion and preserving original motion quality. We measured the transition success rate of 72 transition pairs and achieved an average success rate of 99.99%, which is over 10% higher than the baseline random approach, and outperforms other state-of-the-art methods. Using domain randomization during training we ensure a successful transfer to the real world, where we achieve an average transition success rate of 97.22% (N=360) in our experiments.</p>
+            <p>Expert composer policy generates novel transitions between arbitrary agent states, enabling skill repertoire expansion while preserving the motion quality of the original experts.</p>
             <!-- TODO: Replace with venue and year -->
             <span class="work-venue">ICRA 2024</span>
           </div>
@@ -273,7 +273,7 @@
         <a href="https://arxiv.org/abs/2410.16632" class="work-item" target="_blank">
           <div class="work-info">
             <h5>Benchmarking Smoothness and Reducing High-Frequency Oscillations in Continuous Control Policies</h5>
-            <p>Reinforcement learning (RL) policies are prone to high-frequency oscillations, especially undesirable when deploying to hardware in the real-world. In this paper, we identify, categorize, and compare methods from the literature that aim to mitigate high-frequency oscillations in deep RL. We define two broad classes: loss regularization and architectural methods. At their core, these methods incentivize learning a smooth mapping, such that nearby states in the input space produce nearby actions in the output space. We present benchmarks in terms of policy performance and control smoothness on traditional RL environments from the Gymnasium and a complex manipulation task, as well as three robotics locomotion tasks that include deployment and evaluation with real-world hardware. Finally, we also propose hybrid methods that combine elements from both loss regularization and architectural methods. We find that the best-performing hybrid outperforms other methods, and improves control smoothness by 26.8% over the baseline, with a worst-case performance degradation of just 2.8%.</p>
+            <p>We investigate the use of different classes of regularization to produce smooth control policies in several simulation and real-world environments.</p>
             <span class="work-venue">IROS 2024</span>
           </div>
           <i class="fas fa-external-link-alt"></i>
@@ -330,7 +330,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/icra2026.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -340,6 +340,7 @@
                     </span>
 
                   <!-- TODO: Replace with your GitHub repository URL -->
+                  <template>
                   <span class="link-block">
                     <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -349,6 +350,7 @@
                     <span>Code</span>
                   </a>
                 </span>
+                </template>
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
@@ -536,12 +538,11 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{Luo2024feasibilityguidedplanning,
+      <pre id="bibtex-code"><code>@article{Luo2026feasibilityguidedplanning,
   title={Feasibility-Guided Planning over Multi-Specialized Locomotion Policies},
   author={Ying-Sheng Luo and Lu-Ching Wang and Hanjaya Mandala and Yu-Lun Chou and Guilherme Christmann and Yu-Chung Chen and Yung-Shun Chan and Chun-Yi Lee and Wei-Chao Chen},
-  journal={ICRA2026},
+  booktitle={2026 IEEE International Conference on Robotics and Automation (ICRA)},
   year={2026},
-  url={https://your-domain.com/your-project-page}
 }</code></pre>
     </div>
 </section>
